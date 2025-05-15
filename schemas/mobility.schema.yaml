@@ -19,7 +19,7 @@ properties:
   navigation_mode:
     type: string
     enum: [conservative, modest, aggressive]
-    default: balanced
+    default: modest
   telemetry:
     type: object
     properties:
