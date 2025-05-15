@@ -19,6 +19,27 @@
     "storage_type": {
       "$miru_tag_type_field_id": "ttf_Bq4OL4zynhbDUNQpNVAb2kip",
       "type": "string"
+    },
+    "telemetry": {
+      "type": "object",
+      "properties": {
+        "upload_interval_sec": {
+          "type": "integer",
+          "minimum": 10,
+          "maximum": 300,
+          "default": 60
+        },
+        "heartbeat_interval_sec": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 60,
+          "default": 10
+        }
+      },
+      "required": [
+        "upload_interval_sec",
+        "heartbeat_interval_sec"
+      ]
     }
   },
   "required": [

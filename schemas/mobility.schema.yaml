@@ -36,6 +36,22 @@ properties:
     required:
       - upload_interval_sec
       - heartbeat_interval_sec
+  calibrations:
+    type: object
+    properties:
+      offsets:
+        type: object
+        properties:
+          x:
+            type: number
+          y:
+            type: number
+          z:
+            type: number
+        required:
+          - x
+          - y
+          - z
 required:
   - max_linear_speed_mps
   - max_angular_speed_radps
