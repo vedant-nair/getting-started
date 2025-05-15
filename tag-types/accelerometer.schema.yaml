@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "calibrations": {
+      "properties": {
+        "offsets": {
+          "properties": {
+            "x": {
+              "$miru_tag_type_field_id": "ttf_LHNvqfOnfhZHvfgU2JC7tHi9",
+              "type": "number"
+            },
+            "y": {
+              "$miru_tag_type_field_id": "ttf_VUQZhpQxXSG6ChBGYXYCBTC2",
+              "type": "number"
+            },
+            "z": {
+              "$miru_tag_type_field_id": "ttf_mrqiiGvZMII5AsqkkO3wqQei",
+              "type": "number"
+            }
+          },
+          "required": [
+            "x",
+            "y",
+            "z"
+          ],
+          "type": "object"
+        },
+        "scaling_factor": {
+          "properties": {
+            "x": {
+              "$miru_tag_type_field_id": "ttf_xNSIqJqesBoFsdleAtBoVg9L",
+              "type": "number"
+            },
+            "y": {
+              "$miru_tag_type_field_id": "ttf_F62M7T4LQ2Utl7kYBdGWtgAR",
+              "type": "number"
+            },
+            "z": {
+              "$miru_tag_type_field_id": "ttf_0Y1vp5ZQE7iBnMelEI9TbGso",
+              "type": "number"
+            }
+          },
+          "required": [
+            "x",
+            "y",
+            "z"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "offsets",
+        "scaling_factor"
+      ],
+      "type": "object"
+    },
+    "id": {
+      "$miru_tag_type_field_id": "ttf_9H1bqxVo00pmcb1KwT2rXbd4",
+      "type": "string"
+    }
+  },
+  "required": [
+    "calibrations",
+    "id"
+  ],
+  "type": "object"
+}

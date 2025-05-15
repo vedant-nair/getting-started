@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "location": {
+      "$miru_tag_type_field_id": "ttf_UFsRJ5gTFJAHzIssR1qSTxAs",
+      "type": "string"
+    },
+    "priority_level": {
+      "$miru_tag_type_field_id": "ttf_gyvGq9pba4jyQkj7p90bgWAs",
+      "default": 3,
+      "maximum": 5,
+      "minimum": 1,
+      "type": "number"
+    },
+    "robot_speed_limit": {
+      "$miru_tag_type_field_id": "ttf_D2on2pyHD1p0xB4ydI3CQe3J",
+      "default": 5,
+      "maximum": 10,
+      "minimum": 0,
+      "type": "number"
+    },
+    "safety_mode_enabled": {
+      "$miru_tag_type_field_id": "ttf_ivnZFNjOXa7gFvewVmnvQZ6h",
+      "default": true,
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "location",
+    "priority_level",
+    "robot_speed_limit",
+    "safety_mode_enabled"
+  ],
+  "type": "object"
+}

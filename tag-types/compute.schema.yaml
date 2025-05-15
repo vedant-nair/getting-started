@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "cpu": {
+      "$miru_tag_type_field_id": "ttf_yl5z4RxyJ9YO9AWj9uaXyzOq",
+      "type": "string"
+    },
+    "gpu_enabled": {
+      "$miru_tag_type_field_id": "ttf_9D6l9LN7GDcT8WyfZvQnWVeU",
+      "default": false,
+      "type": "boolean"
+    },
+    "ram_gb": {
+      "$miru_tag_type_field_id": "ttf_2xlXgSqjZAblQhAEm4aR3WPl",
+      "default": 8,
+      "minimum": 1,
+      "type": "number"
+    },
+    "storage_type": {
+      "$miru_tag_type_field_id": "ttf_Bq4OL4zynhbDUNQpNVAb2kip",
+      "type": "string"
+    }
+  },
+  "required": [
+    "gpu_enabled",
+    "cpu",
+    "ram_gb"
+  ],
+  "type": "object"
+}
